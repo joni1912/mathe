@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathe</title>
+</head>
+
+<style>
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(255, 221, 85);
+    }
+
+    body{
+        text-align: center;
+        background-color: rgb(43, 43, 43);
+        color:rgb(233, 233, 233)
+    }
+
+    table{
+        display: flex;
+        justify-content: center;
+    }
+
+    td{
+        text-align: center;
+    }
+
+    #Ergebnis{
+        margin-top: -2.1em;
+        margin-left: 5em;
+        font-size: 20px;
+        height: 1px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .buttons{
+        font-size: 20px;
+        margin-top: 2em;
+    }
+
+    .buttons:hover {
+    background-color: rgb(255, 254, 176);
+    cursor: pointer;
+    border: 1px solid #000000;; 
+    }
+
+    #Winkel{
+        font-size: 20px;    
+        margin-left: -3em;
+        color:#fff07c;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+   
+    .Klammer{
+        font-size: 90px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+</style>
+
+<body>
+        <h1>Schnittwinkel einer Geraden</h1>
+    
+    <table>
+        <tr>
+            <td> g:</td>
+            <td class="Klammer"> (</td>
+            <td>x <br> <br>
+                y <br> <br>
+                z </td>
+                <td class="Klammer"> )</td>
+                <td> =</td>
+                <td class="Klammer"> (</td>
+            <td id="demo"></td>
+            <td class="Klammer"> )</td>
+            <td> +t</td>
+            <td class="Klammer"> (</td>
+            <td id="demo3"></td>
+            <td class="Klammer"> )</td>
+        </tr>
+
+        <tr>
+            <td> <html></html>h:</td>
+            <td class="Klammer"> (</td>
+            <td>x <br> <br>
+                y <br> <br>
+                z </td>
+                <td class="Klammer"> )</td>
+                <td> =</td>
+                <td class="Klammer"> (</td>
+            <td id="demo2"></td>
+            <td class="Klammer"> )</td>
+            <td> +s</td>
+            <td class="Klammer"> (</td>
+            <td id="demo4"></td>
+            <td class="Klammer"> )</td>
+        </tr>   
+    </table>
+    
+    <p id="Winkel">Winkel: </p>
+    <p id="Ergebnis"></p>
+
+    <button type="button" id="rollButton" class="buttons">Neu</button>
+    <button onclick="showMessage()" class="buttons">Lösung</button>
+    
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
