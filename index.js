@@ -58,7 +58,7 @@ let toggle = true;
             text4+="</n>"
             document.getElementById("demo4").innerHTML = text4;
  
-            ergebnis0 = (arr[0]*arr2[0]+arr[1]*arr2[1]+arr[2]*arr2[2])/((Math.sqrt(Math.pow(arr[0], 2)+Math.pow(arr[1], 2)+Math.pow(arr[2], 2)))*(Math.sqrt(Math.pow(arr2[0], 2)+Math.pow(arr2[1], 2)+Math.pow(arr2[2], 2))));
+            ergebnis0 = Math.abs((arr3[0]*arr4[0]+arr3[1]*arr4[1]+arr3[2]*arr4[2]))/((Math.sqrt(Math.pow(arr3[0], 2)+Math.pow(arr3[1], 2)+Math.pow(arr3[2], 2)))*(Math.sqrt(Math.pow(arr4[0], 2)+Math.pow(arr4[1], 2)+Math.pow(arr4[2], 2))));
             ergebnis = roundToTwo(Math.acos(ergebnis0)*(180/(Math.PI)));   
 
             if(toggle===false){
